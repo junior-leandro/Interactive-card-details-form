@@ -1,0 +1,82 @@
+/*
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+
+### Primary
+
+- Linear gradient (active input border): hsl(249, 99%, 64%) to hsl(278, 94%, 30%)
+- Red (input errors): hsl(0, 100%, 66%)
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Light grayish violet: hsl(270, 3%, 87%)
+- Dark grayish violet: hsl(279, 6%, 55%)
+- Very dark violet: hsl(278, 68%, 11%)
+
+
+### Body Copy
+
+- Font size: 18px
+
+### Font
+
+- Family: [Space Grotesk](https://fonts.google.com/specimen/Space+Grotesk)
+- Weights: 500
+*/
+
+body {
+    font-size: 18px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+}
+
+
+.background-roxo {
+    background-image: url("/images/bg-main-mobile.png");
+    background-color: #751488; 
+    height: 250px; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+form {
+    margin: 1em;
+}
+.form-area{
+    margin-top: 3em;
+}
+
+.labelForm {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #360850;
+
+}
+.input {
+    font-family:'Space Grotesk', sans-serif;
+    color: #c0c0c0;
+    font-size: 18px;
+    height: 40px;
+    border-radius: 10px;
+    border: #c0c0c0 solid 1px;
+    width: 100%;
+    margin: 1em auto;
+}
+#inputCardMounth{
+    width: 10vw;
+}
+#inputCardYear {
+    width: 10vw;
+}
+
+#inputCardCvc{
+    width: 20vw;
+}

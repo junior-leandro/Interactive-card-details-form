@@ -1,0 +1,13 @@
+.card {
+    width: 290px;
+}
+.card-back {
+    position: absolute;
+    top: 2em;
+    right: 1em;
+}
+.card-front{
+    position: absolute;
+    top: 7em;
+    right: 4em;
+}

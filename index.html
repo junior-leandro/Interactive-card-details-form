@@ -1,11 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/card-style.css">
   
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,600;0,700;1,800&family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+
+
+
+  
+
   <title>Frontend Mentor | Interactive card details form</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,25 +27,38 @@
   </style>
 </head>
 <body>
+  <section class="container">
 
-  0000 0000 0000 0000
-  Jane Appleseed
-  00/00
+    <div class="background-roxo">
+      <img src="images/bg-card-back.png" alt="" class="card card-back" >
+      <img src="images/bg-card-front.png" alt="" class="card card-front" >
+      <p class="card-number">0000 0000 0000 0000 </p>
+      <p class="card-name"> Jane Appleseed</p>
+      <p class="card-cvc">000</p>
+      <p class="card-exp">00/00</p>
+    </div>
+  </section>
+  <section class="form-area">
+    <div class="form">
+      <form action="enviar">
+        <label for="name" class="labelForm">Cardholder Name</label><br>
+        <input type="text" name="name" id="inputName" class="input" placeholder="e.g Jane Appleseed"><br>
+        <label for="cardNumber" class="labelForm">Card Number</label><br>
+        <input type="number" name="cardNumber" id="inputCardNumber" class="input" placeholder="e.g. 1234 5678 9123 0000"><br>
+        <label for="cardMounth" class="labelForm">Exp. Date (MM/YY)</label>
+        <label for="cardCvc" class="labelForm">CVC</label><br>
+        <input type="number" name="cardMounth" id="inputCardMounth" class="input" placeholder="MM">
+        <input type="number" name="cardYear" id="inputCardYear" class="input" placeholder="YY">
+        <input type="number" name="cardCvc" id="inputCardCvc" class="input" placeholder="e.g. 123"><br>
+        <input type="button" value="Confirm">
+      </form>
+    </div>
 
-  000
+  </section>
 
-  Cardholder Name
-  e.g. Jane Appleseed
+ 
 
-  Card Number
-  e.g. 1234 5678 9123 0000
-
-  Exp. Date (MM/YY)
-  MM
-  YY
-
-  CVC
-  e.g. 123
+  
 
   Confirm
 
@@ -45,7 +70,9 @@
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://junior.dev.br" target="_blank">Junior Oliveira Leandro</a>.
   </div>
+  <script src="js/main.js"> </script>
+  
 </body>
 </html>
