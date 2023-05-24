@@ -32,51 +32,29 @@ The designs were created to the following widths:
 - Weights: 500
 */
 
+
+/* Variaveis do Projeto */
+:root {
+    --text-color: #21092f;
+  }
+
+
 body {
     font-size: 18px;
     font-family: 'Space Grotesk', sans-serif;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 
 .background-roxo {
     background-image: url("/images/bg-main-mobile.png");
-    background-color: #751488; 
+    background-color: #21092f; 
     height: 250px; 
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover; 
 }
-form {
-    margin: 1em;
-}
-.form-area{
-    margin-top: 3em;
-}
 
-.labelForm {
-    text-transform: uppercase;
-    font-size: 14px;
-    color: #360850;
 
-}
-.input {
-    font-family:'Space Grotesk', sans-serif;
-    color: #c0c0c0;
-    font-size: 18px;
-    height: 40px;
-    border-radius: 10px;
-    border: #c0c0c0 solid 1px;
-    width: 100%;
-    margin: 1em auto;
-}
-#inputCardMounth{
-    width: 10vw;
-}
-#inputCardYear {
-    width: 10vw;
-}
-
-#inputCardCvc{
-    width: 20vw;
-}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }

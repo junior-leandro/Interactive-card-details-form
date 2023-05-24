@@ -1,0 +1,67 @@
+
+.form-section{
+
+    /* DESABILITAR E HABILITAR PARA O DESENVOLVIMENTO */
+    /*display: none;*/
+    margin-top: 4em;
+    width: 100vw;
+}
+.form {
+    margin: auto 1em;
+}
+
+.labelForm {
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-size: 14px;
+    color: var(--text-color);
+    margin-top: 5em;
+
+}
+.input {
+    height: 40px;
+    border-radius: 10px;
+    border: #c0c0c0 solid 1px;
+    width: 100%;
+    margin: 1em 0;
+}
+
+input::-webkit-input-placeholder{
+    padding-left: 1em;
+    font-family:'Space Grotesk', sans-serif;
+    color: #c0c0c0;
+    font-size: 18px;
+    align-items: center;
+    
+}
+.tresInputs{
+    display: flex;
+    justify-content:space-between;
+}
+#inputCardMounth{
+    width: 20%;
+    margin-right: .5em;
+}
+#inputCardYear {
+    width: 20%;
+    margin-right: 1em;
+}
+
+#inputCardCvc{
+    width: 50%;
+    
+}
+.label-cvc {
+    margin-left: 0.9em;
+}
+
+#confirm {
+    color: #FFFFFF;
+    font-family:'Space Grotesk', sans-serif;
+    font-size: 18px;
+    border-radius: 10px;
+    width: 100%;
+    height: 60px;
+    background-color: var(--text-color);
+    margin: 2em auto 5em auto;
+}

@@ -11,3 +11,58 @@
     top: 7em;
     right: 4em;
 }
+
+.circulo {
+
+    border-radius: 50%;
+    position: absolute;
+    border: 1px solid #FFFFFF;
+}
+
+.circulo1 {
+    top: 8em;
+    right: 17em;
+    height: 33px;
+    width: 33px;
+    background-color: #FFFFFF;
+}
+.circulo2 {
+    top: 8.5em;
+    right: 15.6em;
+    height: 14px;
+    width: 14px;
+}
+
+
+.card-text {
+    position: absolute;
+    font-weight: 400;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.card-number {
+    font-size: 20px;
+    letter-spacing: .1em;
+    font-weight: 500;
+    top: 11em;
+    right: 4.3em;
+}
+.card-name {
+    letter-spacing: .2em;
+    top: 25.5em;
+    right: 23.7em;
+}
+
+.card-cvc {
+    letter-spacing: .2em;
+    top: 11em;
+    right: 5.2em;
+}
+
+.card-exp {
+    letter-spacing: .2em;
+    top: 25.5em;
+    right: 9em;
+}
