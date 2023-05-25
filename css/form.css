@@ -4,7 +4,7 @@
     /* DESABILITAR E HABILITAR PARA O DESENVOLVIMENTO */
     /*display: none;*/
     margin-top: 4em;
-    width: 100vw;
+    width: 100%;
 }
 .form {
     margin: auto 1em;
@@ -14,26 +14,37 @@
     text-transform: uppercase;
     letter-spacing: .1em;
     font-size: 14px;
-    color: var(--text-color);
+    color: var(--text-violet);
     margin-top: 5em;
 
 }
 .input {
+    font-family:'Space Grotesk', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--text-violet);
     height: 40px;
     border-radius: 10px;
-    border: #c0c0c0 solid 1px;
+    border: var(--text-grey) solid 1px;
     width: 100%;
-    margin: 1em 0;
+    margin: 1em auto;
+    outline: none;
 }
 
 input::-webkit-input-placeholder{
-    padding-left: 1em;
-    font-family:'Space Grotesk', sans-serif;
-    color: #c0c0c0;
-    font-size: 18px;
-    align-items: center;
     
+    padding-left: 1em;
+    color: var(--text-grey);
+    align-items: center;
 }
+
+input[type=text]:focus {
+    border: var(--border-focus) solid 1px;
+}
+
+.required {border: var(--border-null) solid 1px;
+}
+
 .tresInputs{
     display: flex;
     justify-content:space-between;
@@ -59,9 +70,23 @@ input::-webkit-input-placeholder{
     color: #FFFFFF;
     font-family:'Space Grotesk', sans-serif;
     font-size: 18px;
+    border: 0;
     border-radius: 10px;
     width: 100%;
     height: 60px;
-    background-color: var(--text-color);
+    background-color: var(--text-violet);
     margin: 2em auto 5em auto;
+}
+
+
+@media screen and (min-width: 1280px) {
+    .form-section{
+        width: 60%;
+        margin: 10em 18em auto 18em;
+    }
+    .label-cvc {
+        margin-left: 3.5em;
+    }
+
+
 }

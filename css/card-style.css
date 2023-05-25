@@ -1,3 +1,12 @@
+.card-container {
+    background-image: url("/images/bg-main-desktop.png");
+    background-color: #21092f; 
+    height: 250px; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+
 .card {
     width: 290px;
 }
@@ -12,27 +21,12 @@
     right: 4em;
 }
 
-.circulo {
-
-    border-radius: 50%;
-    position: absolute;
-    border: 1px solid #FFFFFF;
-}
-
-.circulo1 {
+.card-logo {
+    position: absolute; 
+    width: 60px;
     top: 8em;
-    right: 17em;
-    height: 33px;
-    width: 33px;
-    background-color: #FFFFFF;
+    right: 16em;
 }
-.circulo2 {
-    top: 8.5em;
-    right: 15.6em;
-    height: 14px;
-    width: 14px;
-}
-
 
 .card-text {
     position: absolute;
@@ -65,4 +59,55 @@
     letter-spacing: .2em;
     top: 25.5em;
     right: 9em;
+}
+
+@media screen and (min-width: 1280px) {
+
+    .card {
+        width: 320px;
+    }
+    .card-container {
+        width: 40%; 
+        height: 100vh; 
+    }
+
+    .card-back {
+        position: absolute;
+        top: 17em;
+        right: 45em;
+    }
+    .card-front{
+        position: absolute;
+        top: 6em;
+        right: 50em;
+    }
+
+    .card-number {
+        font-size: 20px;
+        letter-spacing: .1em;
+        font-weight: 500;
+        top: 10.5em;
+        right: 46.5em;
+    }
+    .card-name {
+        letter-spacing: .2em;
+        top: 25.5em;
+        right: 108em;
+    }
+    
+    .card-cvc {
+        letter-spacing: .2em;
+        top: 39em;
+        right: 85em;
+    }
+    
+    .card-exp {
+        letter-spacing: .2em;
+        top: 25.5em;
+        right: 93em;
+    }
+    .card-logo {
+        top: 7em;
+        right: 63em;
+    }
 }

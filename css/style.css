@@ -1,8 +1,4 @@
 /*
-# Front-end Style Guide
-
-## Layout
-
 The designs were created to the following widths:
 
 - Mobile: 375px
@@ -35,7 +31,11 @@ The designs were created to the following widths:
 
 /* Variaveis do Projeto */
 :root {
-    --text-color: #21092f;
+    --text-violet: hsl(278, 68%, 11%);
+    --text-grey: hsl(270, 3%, 87%);
+    --text-dark-grey: hsl(279, 6%, 55%);
+    --border-focus:  #5f0594;
+    --border-null: #ff5252;
   }
 
 
@@ -45,16 +45,38 @@ body {
     font-weight: 700;
 }
 
-
-.background-roxo {
-    background-image: url("/images/bg-main-mobile.png");
-    background-color: #21092f; 
-    height: 250px; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-size: cover; 
+.layout{
+    display:block;
 }
 
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution { 
+    padding: .5em;
+    color: #FFFFFF;
+    font-size: 9px;
+    text-align: center;
+    margin: auto;
+    font-weight: 400; 
+    letter-spacing: 0.1em;
+    text-align: center;
+    background-color: #4d4d4d;
+}
+.attribution a { 
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+
+/* O CORRETO É FAZER COM 1140px DE MIN WIDTH POREM MEU NAVEGADOR APRESENTOU PROBLEMAS
+    E NÃO ESTAVA FUNCIONANDO COM ESSA MEDIDA, ALTEREI PARA 1280px PARA CONTINUAR O DESENVOLVIMENTO */
+
+@media screen and (min-width: 1280px) {
+    .attribution{
+        font-size: 11px;
+    }
+
+    .layout {
+        display: flex;
+        flex-direction: row;
+    }
+}

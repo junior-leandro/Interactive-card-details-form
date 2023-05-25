@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
@@ -11,65 +12,67 @@
   <link rel="stylesheet" href="css/card-style.css">
   <link rel="stylesheet" href="css/form.css">
   <link rel="stylesheet" href="css/finish.css">
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
 
   <title>Frontend Mentor | Interactive card details form</title>
 
-  
 </head>
-<body>
-  <section class="card-container">
 
-    <div class="background-roxo">
-      <img src="images/bg-card-back.png" alt="" class="card card-back" >
-      <img src="images/bg-card-front.png" alt="" class="card card-front" >
-      <div class="circulo circulo1" ></div>
-      <div class="circulo circulo2" ></div>
+<body>
+  <section class="layout">
+
+    <div class="card-container">
+      <img src="images/bg-card-back.png" alt="" class="card card-back">
+      <img src="images/bg-card-front.png" alt="" class="card card-front">
+      <img src="images/card-logo.svg" alt="" class="card-logo">
       <p class="card-text card-number">0000 0000 0000 0000 </p>
       <p class="card-text card-name"> Jane Appleseed</p>
       <p class="card-text card-cvc">000</p>
       <p class="card-text card-exp">00/00</p>
     </div>
-  </section>
-  <section class="form-section">
-    <div class="form">
-      <form>
-        <label for="inputName" class="labelForm">Cardholder Name</label><br>
-        <input type="text" name="name" id="inputName" class="input" placeholder="e.g Jane Appleseed" required><br>
-        <label for="inputCardNumber" class="labelForm">Card Number</label><br>
-        <input type="number" name="cardNumber" id="inputCardNumber" class="input" placeholder="e.g. 1234 5678 9123 0000" required><br>
-        <label for="inputCardMounth" class="labelForm">Exp. Date (MM/YY)</label>
-        <label for="inputCardCvc" class="labelForm label-cvc">CVC</label><br>
-        <div class="tresInputs">
-          <input type="number" name="cardMounth" id="inputCardMounth" class="input" placeholder="MM" required>
-          <input type="number" name="cardYear" id="inputCardYear" class="input" placeholder="YY" required>
-          <input type="number" name="cardCvc" id="inputCardCvc" class="input" placeholder="e.g. 123" required><br>
-        </div>
-        <input type="button" value="Confirm" id="confirm">
-      </form>
+
+    <div class="form-section">
+      <div class="form" >
+        <form id="formulario">
+          <label for="inputName" class="labelForm">Cardholder Name</label><br>
+          <input type="text" name="name" id="inputCardName" class="input" placeholder="e.g Jane Appleseed" required><br>
+          <label for="inputCardNumber" class="labelForm">Card Number</label><br>
+          <input type="text" name="cardNumber" id="inputCardNumber" class="input"
+            placeholder="e.g. 1234 5678 9123 0000" required><br>
+          <label for="inputCardMounth" class="labelForm">Exp. Date (MM/YY)</label>
+          <label for="inputCardCvc" class="labelForm label-cvc">CVC</label><br>
+          <div class="tresInputs">
+            <input type="text" name="cardMounth" id="inputCardMounth" class="input required" placeholder="MM" required>
+            <input type="text" name="cardYear" id="inputCardYear" class="input" placeholder="YY" required>
+            <input type="text" name="cardCvc" id="inputCardCvc" class="input" placeholder="e.g. 123" required><br>
+          </div>
+          <input type="submit" value="Confirm" id="confirm">
+        </form>
+      </div>
     </div>
 
   </section>
-
-   <!-- Completed state start -->
-   <section class="finish-section">
-      <div class="finish">
-        <img src="images/icon-complete.svg" alt="" style="circulo-finish">  
-        <p class="thank-you">Thank you!</p>
-        <p class="thank-you-text">We've added your card details</p>
-        <button class="finish-button">Continue</button>
-      </div>
+  
+  <section class="finish-section">
+    <div class="finish">
+      <img src="images/icon-complete.svg" alt="">
+      <p class="thank-you">Thank you!</p>
+      <p class="thank-you-text">We've added your card details</p>
+      <button class="finish-button">Continue</button>
+    </div>
   </section>
 
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://junior.dev.br" target="_blank">Junior Oliveira Leandro</a>.
+    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. |
+      Coded by <a href="https://junior.dev.br" target="_blank">Junior Oliveira Leandro</a>.</p>
   </div>
-  
+
+
+  <script src="js/main.js"></script>
 </body>
+
 </html>
