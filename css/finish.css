@@ -1,8 +1,6 @@
 .finish-section {
-    /* DESABILITAR E HABILITAR PARA O DESENVOLVIMENTO */
-    display: none;
     margin-top: 4em;
-    width: 100vw;
+    width: 100%;
 
 }
 .finish {
@@ -28,7 +26,18 @@
     border-radius: 10px;
     width: 100%;
     height: 50px;
-    background-color: var(--text-color);
+    background-color: var(--button);
     margin: 2em auto 5em auto;
     border: none;
+}
+
+@media screen and (min-width: 1280px) {
+    .finish-section{
+        width: 60%;
+        margin: 10em 10em auto 10em;
+    }
+    .finish-button {
+        width: 60%;
+    }
+  
 }

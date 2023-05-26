@@ -37,34 +37,41 @@
 
     <div class="form-section">
       <div class="form" >
-        <form id="formulario">
-          <label for="inputName" class="labelForm">Cardholder Name</label><br>
-          <input type="text" name="name" id="inputCardName" class="input" placeholder="e.g Jane Appleseed" required><br>
+        <form id="formulario" autocomplete="off">
+          <label for="inputCardName" class="labelForm">Cardholder Name</label><br>
+          <input type="text" name="name" id="inputCardName" class="input" placeholder="e.g Jane Appleseed" maxlength="40" required><br>
+          
           <label for="inputCardNumber" class="labelForm">Card Number</label><br>
-          <input type="text" name="cardNumber" id="inputCardNumber" class="input"
-            placeholder="e.g. 1234 5678 9123 0000" required><br>
+          <input type="number" name="cardNumber" oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+          minlength="16" maxlength="16" id="inputCardNumber" class="input" placeholder="e.g. 1234 5678 9123 0000" required><br>
+           
           <label for="inputCardMounth" class="labelForm">Exp. Date (MM/YY)</label>
           <label for="inputCardCvc" class="labelForm label-cvc">CVC</label><br>
           <div class="tresInputs">
-            <input type="text" name="cardMounth" id="inputCardMounth" class="input required" placeholder="MM" required>
-            <input type="text" name="cardYear" id="inputCardYear" class="input" placeholder="YY" required>
-            <input type="text" name="cardCvc" id="inputCardCvc" class="input" placeholder="e.g. 123" required><br>
+            <input type="number" name="cardMounth" oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+            minlength="2" maxlength="2" id="inputCardMounth" class="input error error_message" placeholder="MM" required>
+            <input type="number" name="cardYear" oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+            minlength="2" maxlength="2" id="inputCardYear" class="input" placeholder="YY" required>
+            <input type="number" name="cardCvc" oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+            minlength="3" maxlength="3" id="inputCardCvc" class="input" placeholder="e.g. 123" required><br>
           </div>
+          
           <input type="submit" value="Confirm" id="confirm">
         </form>
+      </div>
+    </div>
+    <div class="finish-section hidden">
+      <div class="finish">
+        <img src="images/icon-complete.svg" alt="">
+        <p class="thank-you">Thank you!</p>
+        <p class="thank-you-text">We've added your card details</p>
+        <button class="finish-button">Continue</button>
       </div>
     </div>
 
   </section>
   
-  <section class="finish-section">
-    <div class="finish">
-      <img src="images/icon-complete.svg" alt="">
-      <p class="thank-you">Thank you!</p>
-      <p class="thank-you-text">We've added your card details</p>
-      <button class="finish-button">Continue</button>
-    </div>
-  </section>
+  
 
   <div class="attribution">
     <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. |

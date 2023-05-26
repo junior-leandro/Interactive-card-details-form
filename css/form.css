@@ -1,8 +1,5 @@
 
 .form-section{
-
-    /* DESABILITAR E HABILITAR PARA O DESENVOLVIMENTO */
-    /*display: none;*/
     margin-top: 4em;
     width: 100%;
 }
@@ -20,30 +17,33 @@
 }
 .input {
     font-family:'Space Grotesk', sans-serif;
+    padding-left: 1em;
     font-weight: 500;
     font-size: 18px;
     color: var(--text-violet);
     height: 40px;
     border-radius: 10px;
     border: var(--text-grey) solid 1px;
-    width: 100%;
+    width: 94%;
     margin: 1em auto;
     outline: none;
 }
 
 input::-webkit-input-placeholder{
     
-    padding-left: 1em;
     color: var(--text-grey);
     align-items: center;
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
 
-input[type=text]:focus {
+input[type=text]:focus, input[type=number]:focus {
     border: var(--border-focus) solid 1px;
 }
 
-.required {border: var(--border-null) solid 1px;
-}
 
 .tresInputs{
     display: flex;
@@ -59,7 +59,7 @@ input[type=text]:focus {
 }
 
 #inputCardCvc{
-    width: 50%;
+    width: 60%;
     
 }
 .label-cvc {
@@ -78,14 +78,26 @@ input[type=text]:focus {
     margin: 2em auto 5em auto;
 }
 
+.error{
+    border: var(--border-null) solid 1px;
+}
+.error_message{
+    gap: 0;
+}
+.error_message::after{
+    content: "can't be blank";
+    color: var(--border-null);
+    margin-top: .2rem;
+}
 
 @media screen and (min-width: 1280px) {
     .form-section{
         width: 60%;
         margin: 10em 18em auto 18em;
     }
+
     .label-cvc {
-        margin-left: 3.5em;
+        margin-left: 2.5em;
     }
 
 
