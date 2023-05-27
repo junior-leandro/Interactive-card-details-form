@@ -8,15 +8,14 @@
 }
 
 .card {
+    position: absolute;
     width: 290px;
 }
 .card-back {
-    position: absolute;
     top: 2em;
     right: 1em;
 }
 .card-front{
-    position: absolute;
     top: 7em;
     right: 4em;
 }
@@ -34,29 +33,28 @@
     font-size: 10px;
     text-transform: uppercase;
     color: #FFFFFF;
+    letter-spacing: .2em;
+
+    
 }
 
 .card-number {
     font-size: 20px;
     letter-spacing: .1em;
-    font-weight: 500;
     top: 11em;
-    right: 4.3em;
+    left: 1.5em;
 }
 .card-name {
-    letter-spacing: .2em;
     top: 25.5em;
-    right: 23.7em;
+    left: 3em;
 }
 
 .card-cvc {
-    letter-spacing: .2em;
     top: 11em;
     right: 5.2em;
 }
 
 .card-exp {
-    letter-spacing: .2em;
     top: 25.5em;
     right: 9em;
 }
@@ -72,12 +70,10 @@
     }
 
     .card-back {
-        position: absolute;
         top: 17em;
         right: 45em;
     }
     .card-front{
-        position: absolute;
         top: 6em;
         right: 50em;
     }
@@ -87,12 +83,12 @@
         letter-spacing: .1em;
         font-weight: 500;
         top: 10.5em;
-        right: 46.5em;
+        left: 7.5em;
     }
     .card-name {
         letter-spacing: .2em;
         top: 25.5em;
-        right: 108em;
+        left: 15em;
     }
     
     .card-cvc {
