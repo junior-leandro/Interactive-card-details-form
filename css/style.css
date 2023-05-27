@@ -68,12 +68,10 @@ body {
 }
 
 
-/* O CORRETO É FAZER COM 1140px DE MIN WIDTH POREM MEU NAVEGADOR APRESENTOU PROBLEMAS
-    E NÃO ESTAVA FUNCIONANDO COM ESSA MEDIDA, ALTEREI PARA 1280px PARA CONTINUAR O DESENVOLVIMENTO */
 .hidden {
     display: none;
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1440px) {
     .attribution{
         font-size: 11px;
     }

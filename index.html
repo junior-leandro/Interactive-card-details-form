@@ -29,33 +29,41 @@
       <img src="images/bg-card-back.png" alt="" class="card card-back">
       <img src="images/bg-card-front.png" alt="" class="card card-front">
       <img src="images/card-logo.svg" alt="" class="card-logo">
-      <p class="card-text card-number">0000 0000 0000 0000 </p>
-      <span class="card-text card-name"> Jane Appleseed</span>
-      <p class="card-text card-cvc">000</p>
-      <p class="card-text card-exp">00/00</p>
+      <span class="card-text card-number">0000 0000 0000 0000</span>
+      <span class="card-text card-name">Jane Appleseed</span>
+      <span class="card-text card-exp">
+        <span class="card-month">00</span>/<span class="card-year">00</span>
+      </span>
+      <span class="card-text card-cvc">000</span>
     </div>
 
     <div class="form-section">
       <div class="form" >
         <form id="formulario" autocomplete="off">
           <label for="inputCardName" class="labelForm">Cardholder Name</label><br>
-          <input type="text" name="name" id="inputCardName" class="input" placeholder="e.g Jane Appleseed" maxlength="40" required><br>
+          <input type="text" id="inputCardName" class="input" placeholder="e.g Jane Appleseed" maxlength="40" required><span class="error-message-name hidden"></span><br>
           
           <label for="inputCardNumber" class="labelForm">Card Number</label><br>
-          <input type="number" name="cardNumber" oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-          minlength="16" maxlength="16" id="inputCardNumber" class="input" placeholder="e.g. 1234 5678 9123 0000" required><br>
+          <input type="number" oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+          minlength="16" maxlength="16" id="inputCardNumber" class="input" placeholder="e.g. 1234 5678 9123 0000" required><span class="error-message-number hidden"></span><br>
            
           <label for="inputCardMounth" class="labelForm">Exp. Date (MM/YY)</label>
           <label for="inputCardCvc" class="labelForm label-cvc">CVC</label><br>
           <div class="tresInputs">
-            <input type="number" name="cardMounth" oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-            minlength="2" maxlength="2" id="inputCardMounth" class="input error error_message" placeholder="MM" required>
-            <input type="number" name="cardYear" oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-            minlength="2" maxlength="2" id="inputCardYear" class="input" placeholder="YY" required>
-            <input type="number" name="cardCvc" oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-            minlength="3" maxlength="3" id="inputCardCvc" class="input" placeholder="e.g. 123" required><br>
+            <div>
+              <input type="number" oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              minlength="2" maxlength="2" id="inputCardMonth" class="input" placeholder="MM" required>
+            </div>
+            <div>
+              <input type="number" oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              minlength="2" maxlength="2" id="inputCardYear" class="input" placeholder="YY" required>
+            </div>
+            <div>
+              <input type="number" oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+              minlength="3" maxlength="3" id="inputCardCvc" class="input" placeholder="e.g. 123" required><br><span class="error-message-cvc hidden"></span><br>
+            </div>
           </div>
-          
+          <span class="error-message-date hidden"></span>
           <input type="submit" value="Confirm" id="confirm">
         </form>
       </div>

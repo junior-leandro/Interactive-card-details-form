@@ -46,24 +46,23 @@ input[type=text]:focus, input[type=number]:focus {
 
 
 .tresInputs{
-    display: flex;
+    display: grid;
+    max-width: 97%;
+    grid-template-columns: 1fr 1fr 2fr;
     justify-content:space-between;
 }
-#inputCardMounth{
-    width: 20%;
-    margin-right: .5em;
+
+#inputCardMonth{
+    max-width: 60%;
+    
 }
 #inputCardYear {
-    width: 20%;
-    margin-right: 1em;
+    max-width: 60%;
 }
 
 #inputCardCvc{
-    width: 60%;
+    max-width: 100%;
     
-}
-.label-cvc {
-    margin-left: 0.9em;
 }
 
 #confirm {
@@ -81,16 +80,52 @@ input[type=text]:focus, input[type=number]:focus {
 .error{
     border: var(--border-null) solid 1px;
 }
-.error_message{
+.error-message-name{
+    position: relative;
+    top:-1.56em;
+    font-size: 12px;
     gap: 0;
 }
-.error_message::after{
+.error-message-name::after{
     content: "can't be blank";
     color: var(--border-null);
-    margin-top: .2rem;
+}
+.error-message-number{
+    position: relative;
+    top:-1.56em;
+    font-size: 12px;
+    gap: 0;
+}
+.error-message-number::after{
+    content: "can't be blank";
+    color: var(--border-null);
+}
+.error-message-cvc{
+    position: relative;
+    top:-1.56em;
+    font-size: 12px;
+    gap: 0;
+}
+.error-message-cvc::after{
+    content: "can't be blank";
+    color: var(--border-null);
+}
+.error-message-date{
+    position: relative;
+    top:-3.1em;
+    font-size: 12px;
+    gap: 0;
+}
+.error-message-date::after{
+    content: "can't be blank";
+    color: var(--border-null);
+}
+.numbers-out::after{
+    content: "Wrong format, numbers missing";
+    color: var(--border-null);
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1440px) {
     .form-section{
         width: 60%;
         margin: 10em 18em auto 18em;
