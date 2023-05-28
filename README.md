@@ -5,6 +5,9 @@ Os desafios do Frontend Mentor ajudam você a melhorar suas habilidades de codif
 
 Este desafio também representa o projeto inicial da mentoria Conquiste Sua Vaga do Pedro Marins.
 
+
+#### [** VOCÊ PODE VER O RESULTADO CLICANDO AQUI **](https://interactive-card-details-form-ten-zeta.vercel.app/)
+
 ## O desafio
 
 O desafio é criar um formulário interativo de detalhes do cartão e deixá-lo o mais próximo possível do design.
@@ -15,12 +18,13 @@ Seus usuários devem ser capazes de:
 - Receber mensagens de erro quando o formulário for enviado se:
   - Qualquer campo de entrada está vazio;
   - O número do cartão, data de validade ou campos CVC estão no formato errado.
-- Veja o layout ideal dependendo do tamanho da tela do dispositivo. Os tamanhos de tela propostos são:
+- Veja o layout ideal dependendo do tamanho da tela do dispositivo. 
+- Os tamanhos de tela propostos no desafio são:
   - 1440px para desktop. 
   - 375px para mobile. 
 - Ver os estados de focalização, ativo e foco para elementos interativos na página.
 
-## Importante!
+### Importante!
 Por se tratar de uma página de cadastro de cartões, o navegador pode exibir um aviso de "Site fraudulento".
 Para prosseguir com os testes, permita que seu navegador acesse a página, e lembre-se de nunca inserir dados reais de cartão em sites com essa mensagem ;D
 
