@@ -1,7 +1,7 @@
 .card-container {
     background-image: url("/images/bg-main-desktop.png");
     background-color: #21092f; 
-    height: 250px; 
+    height: 230px; 
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover; 
@@ -9,7 +9,7 @@
 
 .card {
     position: absolute;
-    width: 290px;
+    width: 280px;
 }
 .card-back {
     top: 2em;
@@ -24,7 +24,7 @@
     position: absolute; 
     width: 60px;
     top: 8em;
-    right: 16em;
+    right: 15.5em;
 }
 
 .card-text {
@@ -44,16 +44,16 @@
     font-size: 20px;
     letter-spacing: .1em;
     top: 11em;
-    left: 1.5em;
+    left: 1.7em;
 }
 .card-name {
     top: 25.5em;
-    left: 3em;
+    left: 3.3em;
 }
 
 .card-cvc {
-    top: 11em;
-    right: 5.2em;
+    top: 10.5em;
+    right: 5em;
 }
 
 .card-exp {
@@ -61,7 +61,7 @@
     right: 9em;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1200px) {
 
     .card {
         width: 360px;
@@ -87,7 +87,7 @@
     .card-number {
         font-size: 25px;
         top: 8.3em;
-        left: 6.7em;
+        left: 6.5em;
     }
     .card-name {
         letter-spacing: .2em;

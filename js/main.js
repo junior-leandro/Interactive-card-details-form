@@ -45,7 +45,7 @@ function format(s) {
     return s.toString().replace(/\d{4}(?=.)/g, "$& ");
 }
 
-function handleSubmit(e) {
+function Submit(e) {
 
     e.preventDefault();
 
@@ -63,48 +63,48 @@ function handleSubmit(e) {
     } else if (cardNumberInput.value.length < 16) {
         cardNumberInput.classList.add("error");        
         cardNumberSpan.classList.add("numbers-out");
+        cardNumberSpan.classList.remove("hidden");
     } else {
         cardNumberInput.classList.remove("error");
+        cardNumberSpan.classList.remove("numbers-out");
         cardNumberSpan.classList.add("hidden");
     }
-    if (!cardMonthInput.value) {
+
+    if (!cardMonthInput.value || !cardYearInput.value) {
         cardMonthInput.classList.add("error");
-        cardExp.classList.remove("hidden");
-    } /*else if (cardMonthInput.value.length > 0 && cardMonthInput.value.length <3 ){
-        cardMonthInput.classList.add("error");        
-        cardExp.classList.add("numbers-out");
-    }*/ else {
-        cardMonthInput.classList.remove("error");
-        cardExp.classList.add("hidden");
-    }
-    if (!cardYearInput.value) {
         cardYearInput.classList.add("error");
         cardExp.classList.remove("hidden");
-    } else {
-        cardYearInput.classList.remove("error");
+    }else if (cardMonthInput.value.length <2 || cardYearInput.value.length <2){
+        cardMonthInput.classList.add("error");  
+        cardYearInput.classList.add("error");    
+        cardExp.classList.add("numbers-out");
         cardExp.classList.remove("hidden");
+    } else {
+        cardMonthInput.classList.remove("error");
+        cardYearInput.classList.remove("error");
+        cardExp.classList.remove("numbers-out");
+        cardExp.classList.add("hidden");
     }
+
+
     if (!cardCvcInput.value) {
         cardCvcInput.classList.add("error");
         cardCvcSpan.classList.remove("hidden");
-    } else {
+    } else if (cardCvcInput.value.length <3 ){
+        cardCvcInput.classList.add("error");      
+        cardCvcSpan.classList.add("numbers-out");
+        cardCvcSpan.classList.remove("hidden");
+        
+    } else{
         cardCvcInput.classList.remove("error");
+        cardCvcSpan.classList.remove("numbers-out"); 
         cardCvcSpan.classList.add("hidden");
     }
-    if (
-        cardNameInput.value &&
-        cardNumberInput.value &&
-        cardMonthInput.value &&
-        cardYearInput.value &&
-        cardCvcInput.value &&
-        cardNumberInput.value.length == 16
-    ){
-        
-    completed.classList.remove("hidden");
-    formSection.classList.add("hidden");
+    if (cardNameInput.value && cardNumberInput.value.length ==16 && cardMonthInput.value.length ==2 && cardYearInput.value.length == 2 && cardCvcInput.value.length == 3){
+        completed.classList.remove("hidden");
+        formSection.classList.add("hidden");
 
     }
-
     
 }
 
@@ -116,7 +116,7 @@ cardNumberInput.addEventListener("keyup", setCardNumber);
 cardMonthInput.addEventListener("keyup", setCardMonth);
 cardYearInput.addEventListener("keyup", setCardYear);
 cardCvcInput.addEventListener("keyup", setCardCvc);
-buttonSend.addEventListener("click", handleSubmit);
+buttonSend.addEventListener("click", Submit);
 
 
 

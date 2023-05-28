@@ -31,7 +31,7 @@
     border: none;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1200px) {
     .finish-section{
         width: 60%;
         margin: 10em 10em auto 10em;

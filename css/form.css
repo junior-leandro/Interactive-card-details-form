@@ -10,7 +10,7 @@
 .labelForm {
     text-transform: uppercase;
     letter-spacing: .1em;
-    font-size: 14px;
+    font-size: 12px;
     color: var(--text-violet);
     margin-top: 5em;
 
@@ -25,7 +25,7 @@
     border-radius: 10px;
     border: var(--text-grey) solid 1px;
     width: 94%;
-    margin: 1em auto;
+    margin: .7em auto;
     outline: none;
 }
 
@@ -70,53 +70,30 @@ input[type=text]:focus, input[type=number]:focus {
     font-family:'Space Grotesk', sans-serif;
     font-size: 18px;
     border: 0;
-    border-radius: 10px;
+    border-radius: 8px;
     width: 100%;
-    height: 60px;
+    height: 50px;
     background-color: var(--text-violet);
-    margin: 2em auto 5em auto;
+    margin-bottom: 1em;
 }
 
 .error{
     border: var(--border-null) solid 1px;
 }
-.error-message-name{
+
+.errorX {
     position: relative;
-    top:-1.56em;
-    font-size: 12px;
     gap: 0;
+    font-size: 10px;
 }
-.error-message-name::after{
-    content: "can't be blank";
-    color: var(--border-null);
+.error-message-name, .error-message-number, .error-message-cvc{
+    top:-1.6em;
 }
-.error-message-number{
-    position: relative;
-    top:-1.56em;
-    font-size: 12px;
-    gap: 0;
-}
-.error-message-number::after{
-    content: "can't be blank";
-    color: var(--border-null);
-}
-.error-message-cvc{
-    position: relative;
-    top:-1.56em;
-    font-size: 12px;
-    gap: 0;
-}
-.error-message-cvc::after{
-    content: "can't be blank";
-    color: var(--border-null);
-}
+
 .error-message-date{
-    position: relative;
-    top:-3.1em;
-    font-size: 12px;
-    gap: 0;
+    top:-3.5em;
 }
-.error-message-date::after{
+.error-message-date::after, .error-message-cvc::after, .error-message-number::after, .error-message-name::after{
     content: "can't be blank";
     color: var(--border-null);
 }
@@ -125,7 +102,7 @@ input[type=text]:focus, input[type=number]:focus {
     color: var(--border-null);
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1200px) {
     .form-section{
         width: 60%;
         margin: 10em 18em auto 18em;
@@ -134,6 +111,14 @@ input[type=text]:focus, input[type=number]:focus {
     .label-cvc {
         margin-left: 2.5em;
     }
-
-
+    .error-message-name, .error-message-number, .error-message-cvc{
+        top:-1em;
+    }
+    
+    .error-message-date{
+        top:-2.5em;
+    }
+    .errorX {
+        font-size: 12px;
+    }
 }
