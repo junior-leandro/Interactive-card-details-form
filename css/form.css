@@ -103,6 +103,13 @@ input[type=text]:focus, input[type=number]:focus {
     color: var(--border-null);
 }
 
+.invalid::after {    
+    content: "Invalid, numbers missing";
+    color: var(--border-null);
+
+}
+
+
 
 @media screen and (min-width: 1280px) {
     .form-section{
@@ -118,9 +125,6 @@ input[type=text]:focus, input[type=number]:focus {
     }
     
     .error-message-date{
-        top:-2.5em;
-    }
-    .errorX {
-        font-size: 12px;
+        top:-2.8em;
     }
 }

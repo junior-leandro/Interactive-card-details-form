@@ -20,7 +20,9 @@ Seus usuários devem ser capazes de:
   - 375px para mobile. 
 - Ver os estados de focalização, ativo e foco para elementos interativos na página.
 
-
+## Importante!
+Por se tratar de uma página de cadastro de cartões, o navegador pode exibir um aviso de "Site fraudulento".
+Para prosseguir com os testes, permita que seu navegador acesse a página, e lembre-se de nunca inserir dados reais de cartão em sites com essa mensagem ;D
 
 ### Comportamento esperado
 

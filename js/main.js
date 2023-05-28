@@ -24,6 +24,7 @@ let cardCvcInput = document.querySelector("#inputCardCvc");
 let cardCvcSpan = document.querySelector(".error-message-cvc");
 
 
+
 function setCardName(e) {
     cardName.innerText = format(e.target.value);
 }
@@ -45,6 +46,7 @@ function format(s) {
     return s.toString().replace(/\d{4}(?=.)/g, "$& ");
 }
 
+
 function Submit(e) {
 
     e.preventDefault();
@@ -64,7 +66,7 @@ function Submit(e) {
         cardNumberInput.classList.add("error");        
         cardNumberSpan.classList.add("numbers-out");
         cardNumberSpan.classList.remove("hidden");
-    } else {
+    } else{
         cardNumberInput.classList.remove("error");
         cardNumberSpan.classList.remove("numbers-out");
         cardNumberSpan.classList.add("hidden");
@@ -77,12 +79,12 @@ function Submit(e) {
     }else if (cardMonthInput.value.length <2 || cardYearInput.value.length <2){
         cardMonthInput.classList.add("error");  
         cardYearInput.classList.add("error");    
-        cardExp.classList.add("numbers-out");
+        cardExp.classList.add("invalid");
         cardExp.classList.remove("hidden");
     } else {
         cardMonthInput.classList.remove("error");
         cardYearInput.classList.remove("error");
-        cardExp.classList.remove("numbers-out");
+        cardExp.classList.remove("invalid");
         cardExp.classList.add("hidden");
     }
 
