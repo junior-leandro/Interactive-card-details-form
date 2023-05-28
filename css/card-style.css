@@ -13,18 +13,18 @@
 }
 .card-back {
     top: 2em;
-    right: 1em;
+    left: 4em;
 }
 .card-front{
     top: 7em;
-    right: 4em;
+    left: 1.2em
 }
 
 .card-logo {
     position: absolute; 
     width: 60px;
     top: 8em;
-    right: 15.5em;
+    left: 1.9em;
 }
 
 .card-text {
@@ -41,27 +41,62 @@
 .card-number {
     
     font-weight: 500;
-    font-size: 20px;
+    font-size: 19px;
     letter-spacing: .1em;
     top: 11em;
-    left: 1.7em;
+    left: 2em;
 }
 .card-name {
     top: 25.5em;
-    left: 3.3em;
+    left: 3.8em;
 }
 
 .card-cvc {
     top: 10.5em;
-    right: 5em;
+    left: 29.5em;
 }
 
 .card-exp {
     top: 25.5em;
-    right: 9em;
+    left: 24.5em;
 }
+@media screen and (min-width: 720px){
 
-@media screen and (min-width: 1200px) {
+    .card-back {
+        top: 1em;
+        left: 14em ;
+    }
+    .card-front{
+        top: 5.8em;
+        left: 10em;
+    }
+
+
+    .card-number {
+        top: 10.3em;
+        left: 10.5em;
+    }
+    .card-name {
+        top: 23em;
+        left: 20em;
+    }
+    
+    .card-cvc {
+        top: 9em;
+        left: 47.5em;
+    }
+    
+    .card-exp {
+        top: 23em;
+        left: 40em;
+    }
+    .card-logo {
+        top: 6.7em;
+        left: 11em;
+    }
+} 
+
+@media screen and (min-width: 1280px) {
 
     .card {
         width: 360px;

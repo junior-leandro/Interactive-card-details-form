@@ -71,7 +71,7 @@ body {
 .hidden {
     display: none;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
     .attribution{
         font-size: 11px;
     }
